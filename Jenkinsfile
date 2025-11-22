@@ -12,12 +12,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "mvn compiler:compile"
-                sh "mvn dependency:copy-dependencies"
                 sh "mvn clean:clean"
+                sh "mvn dependency:copy-dependencies"
+                sh "mvn compiler:compile"
             }
         }
-        stage('Exec') {
+        stage('Run') {
             steps {
                 sh "mvn spring-boot:run -Dspring-boot.run.arguments=\"--SERVER.PORT=8081\""
             }
