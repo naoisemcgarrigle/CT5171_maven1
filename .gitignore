@@ -1,0 +1,63 @@
+# -----------------------------
+# Maven
+# -----------------------------
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!mvnw
+!mvnw.cmd
+.mvn/wrapper/maven-wrapper.properties
+# Ignore other generated Maven files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# -----------------------------
+# IntelliJ IDEA
+# -----------------------------
+.idea/
+
+# -----------------------------
+# Optional IDEs (remove if not needed)
+# -----------------------------
+# Eclipse
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# VS Code
+.vscode/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Environment / secrets
+# -----------------------------
+.env
+.env.*
+*.env
+application.properties
+application.yml
+application-*.yml
+application-*.properties
